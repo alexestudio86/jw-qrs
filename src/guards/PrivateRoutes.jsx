@@ -10,11 +10,11 @@ export function PrivateRoutes({user}) {
     useEffect( () => {
         console.log('us: ', user);
         if (user === false) {
-            navigate('login')
+            navigate('/login')
         }
     },[] )
 
-    return <Outlet/>
+    return (user && <Outlet/>)
 
 
 }

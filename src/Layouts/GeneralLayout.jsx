@@ -1,15 +1,17 @@
 import { Outlet } from "react-router-dom";
-import { Navbar } from "../components/Navbar";
 import {Footer} from "../components/Footer";
-import { LoginProvider } from "../context/LoginProvider";
+import { Header } from "../components/Header";
+import './GeneralLayout.css'
 
 
 export function GeneralLayout() {
 
     return (
         <div className="container">
-            <Navbar/>
+            <Header/>
+            <main className="py-2">
                 <Outlet/>
+            </main>
             <Footer/>
         </div>
     )

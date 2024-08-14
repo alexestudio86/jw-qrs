@@ -1,0 +1,11 @@
+body {
+    background-color: var(--color-light-gray);
+}
+body > div#root {
+    margin-left: auto;
+    margin-right: auto
+}
+
+body > div#root {
+    max-width: 1200px
+}

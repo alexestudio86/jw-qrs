@@ -1,7 +1,7 @@
 export function Footer() {
     return (
-        <>
-            <h1>Soy un footer</h1>
-        </>
+        <footer className="bar center p-3 theme-color-01">
+            <p>Soy un footer</p>
+        </footer>
     )
 }
